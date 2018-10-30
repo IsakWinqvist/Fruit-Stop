@@ -7,7 +7,7 @@ definierar variabler:
 $host = "localhost";
 $user = "dhg17";
 $pass = "mysql2018";
-$db = "register";
+$db = "fruit-stop";
 
 try{
 	$conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
