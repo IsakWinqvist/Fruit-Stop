@@ -14,24 +14,24 @@
 	<div class="container">
 		<?php include 'header.php';?>
 		<h1>Hello, world!</h1>
-				<ul class="nav nav-tabs justify-content-center" role="tablist">
-				  <li class="nav-item">
-					<a class="nav-link active" data-toggle="tab" href="#frukt" role="tab">Frukt</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" data-toggle="tab" href="#grönsaker" role="tab">Grönsaker</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" data-toggle="tab" href="#bär" role="tab">Bär</a>
-				  </li>
-				</ul>
+			<ul class="nav nav-tabs justify-content-center" role="tablist">
+			  <li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#frukt" role="tab">Frukt</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#grönsaker" role="tab">Grönsaker</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#bär" role="tab">Bär</a>
+			  </li>
+			</ul>
 
-				<!-- Tab panes -->
-				<div class="tab-content">
-				  <div class="tab-pane active" id="frukt" role="tabpanel">dsads</div>
-				  <div class="tab-pane" id="grönsaker" role="tabpanel">asdf</div>
-				  <div class="tab-pane" id="bär" role="tabpanel">qwerty</div>
-				</div>
+			<!-- Tab panes -->
+			<div class="tab-content">
+			  <div class="tab-pane active" id="frukt" role="tabpanel">dsads</div>
+			  <div class="tab-pane" id="grönsaker" role="tabpanel">asdf</div>
+			  <div class="tab-pane" id="bär" role="tabpanel">qwerty</div>
+			</div>
 	</div>
 
 
