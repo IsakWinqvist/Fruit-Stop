@@ -38,6 +38,8 @@
 
 			<div class="b p-3 tab-content">
 			  <div class="tab-pane active" id="frukt" role="tabpanel">
+          <p class="text-center">use <kbd>ctrl+f</kbd> to find product</p>
+          
           <figure class="col-2 figure">
             <img src="strawberry.png" width="100%" class="figure-img img-fluid rounded" alt="yes">
             <figcaption class="figure-caption">Strawberries</figcaption>
@@ -111,6 +113,8 @@
         </div>
 
         <div class="tab-pane" id="grönsaker" role="tabpanel">
+          <p class="text-center">use <kbd>ctrl+f</kbd> to find product</p>
+
           <figure class="col-2 figure">
             <img src="http://placehold.it/300" class="figure-img img-fluid rounded" alt="yes">
             <figcaption class="figure-caption">Pineapple</figcaption>
@@ -128,6 +132,8 @@
 			</div>
 
       <div class="tab-pane" id="bär" role="tabpanel">
+        <p class="text-center">use <kbd>ctrl+f</kbd> to find product</p>
+
         <figure class="col-2 figure">
           <img src="http://placehold.it/300" class="figure-img img-fluid rounded" alt="yes">
           <figcaption class="figure-caption">Pineapple</figcaption>
@@ -142,7 +148,7 @@
           <a class="btn btn-success btn-sm">update</a>
         </figure>
       </div>
-        use <kbd>ctrl+f</kbd> to find product
+
 	</div>
 
 
