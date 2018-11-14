@@ -1,4 +1,6 @@
-<?php include('includes/db_connect.php'); ?>
+<?php include('includes/db_connect.php');
+    session_start();
+?>
 <!doctype html>
 <html lang="en">
 <?php include 'head.php';?>

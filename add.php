@@ -47,9 +47,9 @@ if(isset($_POST) && !empty($_POST)) {
 			<!-- add product -->
 			<h1>Add Product</h1>
 			<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="categoryid">
-				<p><label>name</label><br>
+				<p class="font-weight-bold"><label>name</label><br>
 					<input size="35" type="text" name="name"</p>
-				<p><label>category</label><br>
+				<p class="font-weight-bold"><label>category</label><br>
 					<select name="categoryid"></p>
 						<option value="Frukt">Frukt</option>
 						<option value="Grönsaker">Grönsaker</option>
