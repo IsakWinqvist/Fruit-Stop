@@ -31,7 +31,7 @@ $stmt = $conn->query($q_select);
   <body>
 	<div class="container">
 		<?php include 'header.php';?>
-		<p>This is admin page view able only by logged in users.</p>
+		<p>This is admin page viewable only by logged in users.</p>
 		
 		<a class="btn btn-danger" href="delete.php" role="button">delete product</a>
 		<a class="btn btn-primary" href="update.php" role="button">update product</a>
@@ -55,7 +55,7 @@ $stmt = $conn->query($q_select);
 		</td><td>
 		<?php if($row['categoryid'] == 0){echo "Frukt";
 		}elseif($row['categoryid'] == 1){echo "Grönsaker";
-		}elseif($row['categoryid'] == 2){echo "bär";}?>
+		}elseif($row['categoryid'] == 2){echo "Bär";}?>
 		</td><td>
 		<?php echo $row['id']; ?>
 		<td>

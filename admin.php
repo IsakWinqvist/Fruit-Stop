@@ -10,7 +10,7 @@ include('includes/db_connect.php');
     <body>
 		<div class="container">
 			<?php include 'header.php';?>
-			<p>This is admin page view able only by logged in users.</p>
+			<p>This is admin page viewable only by logged in users.</p>
 			
 			<a class="btn btn-danger" href="delete.php" role="button">delete product</a>
 			<a class="btn btn-primary" href="update.php" role="button">update product</a>
