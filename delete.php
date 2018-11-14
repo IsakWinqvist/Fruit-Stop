@@ -31,12 +31,14 @@ $stmt = $conn->query($q_select);
   <body>
 	<div class="container">
 		<?php include 'header.php';?>
+		<div class="bg-light">
 		<p>This is admin page viewable only by logged in users.</p>
 		
-		<a class="btn btn-danger" href="delete.php" role="button">delete product</a>
-		<a class="btn btn-primary" href="update.php" role="button">update product</a>
-		<a class="btn btn-success" href="add.php" role="button">add product</a>
-		
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<a class="btn btn-danger" href="delete.php" role="button">delete product</a>
+			<a class="btn btn-primary" href="update.php" role="button">update product</a>
+			<a class="btn btn-success" href="add.php" role="button">add product</a>
+		</div>
 		
 		<!-- Delete product -->
 		<h1>Delete Product</h1>
@@ -68,6 +70,7 @@ $stmt = $conn->query($q_select);
 		</table>
 		
 		<?php if(!empty($output)) { echo '<h3>' . $output . '</h3>'; } ?>
+		</div>
 		<?php include 'footer.php';?>
 	</div>
 

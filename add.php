@@ -16,7 +16,7 @@ if (isset($_POST['categoryid'])){
 };	
 
 if(isset($_POST) && !empty($_POST)) {
-		
+		if(isset($_POST['insert'])) {
 	$sql ="INSERT INTO products (name, categoryid) VALUES(:name, :categoryid)";
 	$result = $conn->prepare($sql);
 	$res = $result->execute(
@@ -29,7 +29,8 @@ if(isset($_POST) && !empty($_POST)) {
 		$output = "product added";
 	} else {
 		$output = "big problem";
-	}	
+	}
+		}	
 }
 ?>
 <!doctype html>
@@ -38,28 +39,32 @@ if(isset($_POST) && !empty($_POST)) {
     <body>
 		<div class="container">
 			<?php include 'header.php';?>
-			<p>This is admin page viewable only by logged in users.</p>
-			
-			<a class="btn btn-danger" href="delete.php" role="button">delete product</a>
-			<a class="btn btn-primary" href="update.php" role="button">update product</a>
-			<a class="btn btn-success" href="add.php" role="button">add product</a>
+			<div class="bg-light">
+				<p>This is admin page viewable only by logged in users.</p>
+				
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<a class="btn btn-danger" href="delete.php" role="button">delete product</a>
+					<a class="btn btn-primary" href="update.php" role="button">update product</a>
+					<a class="btn btn-success" href="add.php" role="button">add product</a>
+				</div>
 
-			<!-- add product -->
-			<h1>Add Product</h1>
-			<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="categoryid">
-				<p class="font-weight-bold"><label>name</label><br>
-					<input size="35" type="text" name="name"</p>
-				<p class="font-weight-bold"><label>category</label><br>
-					<select name="categoryid"></p>
-						<option value="Frukt">Frukt</option>
-						<option value="Grönsaker">Grönsaker</option>
-						<option value="Bär">Bär</option>
-					</select>
-						
-				<p><button type="submit">Submit</button></p>
-					<?php if(!empty($output)) { echo '<h3>' . $output . '</h3>'; }; ?>
-					<?php include 'footer.php';?>
-			</form>
+				<!-- add product -->
+				<h1>Add Product</h1>
+				<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="categoryid">
+					<p class="font-weight-bold"><label>name</label><br>
+						<input size="35" type="text" name="name"</p>
+					<p class="font-weight-bold"><label>category</label><br>
+						<select name="categoryid"></p>
+							<option value="Frukt">Frukt</option>
+							<option value="Grönsaker">Grönsaker</option>
+							<option value="Bär">Bär</option>
+						</select>
+							
+					<p><button type="submit" name="insert">Submit</button></p>
+						<?php if(!empty($output)) { echo '<h3>' . $output . '</h3>'; }; ?>
+						<?php include 'footer.php';?>
+				</form>
+			</div>
 	
 		</div>
     </body> 

@@ -11,7 +11,7 @@ echo 	"<header>
 					  session_destroy(); header('LOCATION:index.php'); die();
 				  }
 				
-				if(isset($_SESSION['login'])){ echo "<form action='' method='post'>
+				if(isset($_SESSION['login'])){ echo "<form method='post'>
 					<button type='logout' name='logout' class='btn'>Log out</button>
 				</form>";
 				}
